@@ -201,7 +201,7 @@ function openTab(evt, tabName) {
 
 var tl = gsap.timeline();
 tl.to("#loader", {
-  top: "-100%",
+  top: "-150%",
   borderTopLeftRadius: "70%",
   borderBottomLeftRadius: "70%",
   borderBottomRightRadius: "70%", // Add this line to animate the right side as well
