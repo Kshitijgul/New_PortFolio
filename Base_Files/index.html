@@ -1,26 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="KG.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="KG.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="/Base_Files/KG.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Base_Files/KG.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div id="circle"></div>
+    <div id="loader">
+      <div class="loader-text">
+        <h1>WelCome to The Showcase</h1>
+        <h2>- " Kshitij Guladhe "</h2>
+      </div>
+      <div class="line-box">
+        <div class="line">
+          
+        </div>
+      </div>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <title>Kshitj Portfolio</title>
-</head>
-<body>
-    <div class="container" data-scroll-container>
-        <section class="section1">...</section>
-        <section class="section2">..dfhnjgfjfgj.</section>
-        <section class="section3">...</section>
     </div>
-    
+    <div class="vertical_nav">
+      <div class="hamburger_menu" style="position: fixed">
+        <div class="menu">
+          <div>
+            <span id="line1"></span>
+            <span id="line2"></span>
+            <span id="line3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vertical_menu">
+      <!-- <div class="hamburger_menu" style="position: fixed">
+        <div class="menu">
+          <div>
+            <span id="line1"></span>
+            <span id="line2"></span>
+            <span id="line3"></span>
+          </div>
+        </div>
+      </div> -->
+      <div class="vertical_menu_list">
+        <h3>Menu</h3>
+        <ul>
+          <li>
+            <a class="frame" href="index.html">
+              <span>Home</span> 
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a class="frame" href="#page2for">
+              <span>about</span>
+              <span>about</span>
+            </a>
+          </li>
+          <li>
+            <a class="frame" href="work.html">
+              <span>Work</span>
+              <span>Work</span>
+            </a>
+          </li>
+          <li>
+            <a class="frame" href="contact.html">
+              <span>Contact</span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+        <div class="dark-mode-btn">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="checkbox-label">
+            <i class="ri-moon-fill"></i>
+            <i class="ri-sun-fill"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="smooth-scroll">
+      <div class="pag1">
+        <div class="navbar">
+          <div class="name-text">
+            <h4>Kshitij Guladhe</h4>
+            <h6>Portfolio</h6>
+          </div>
+          <nav>
+            <div class="navmenu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#page2for">about</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <div class="dark-mode-btn">
+                    <input type="checkbox" class="checkbox" id="checkbox" />
+                    <label for="checkbox" class="checkbox-label">
+                      <i class="ri-moon-fill"></i>
+                      <i class="ri-sun-fill"></i>
+                      <span class="ball"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="mainpart"></div>
+        <div class="connectpart"></div>
+      </div>
+      <div class="pag2"></div>
+      <div class="pag3"></div>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
-<script src="main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
