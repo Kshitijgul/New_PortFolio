@@ -151,10 +151,50 @@ var typed = new Typed(".text", {
 });
 
 // +++++++++++++++++++++++++++++++++++++++++++++++
+var frame1 = document.querySelector(".frame1");
+const lerp = (x, y, a) => x * (1 - a) + y * a;
+
+frame1.addEventListener("mousemove",function(dets){
+  var dim = frame1.getBoundingClientRect();
+  // console.log(dim);
+  var xstart = dim.x;
+  var xend=dim.x + dim.width;
+  var zeroone =gsap.utils.mapRange(xstart,xend,0,1,dets.clientX)
+  gsap.to(".frame1 span",{
+    x:lerp(-50,50,zeroone),
+    duration:.4
+  })
+})
+frame1.addEventListener("mouseleave",function(dets){
+  gsap.to(".frame1 span",{
+    x:0,
+    duration:.4
+  })
+})
+
+
 
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++++
+
+document.getElementById("programming-languages").style.display = "block";
+    //  Tabs Switching 
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+}
 
 // +++++++++++++++++++++++++++++++++++++++++++++++
 
