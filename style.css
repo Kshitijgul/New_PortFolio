@@ -572,6 +572,7 @@ nav {
 }
 
 /* ++++++++++++++++++++++++++++++++ */
+
 .container1 h2 {
     text-align: center;
     padding: 2% 0%;
@@ -711,7 +712,7 @@ footer {
     padding: 20px 0;
     /* position: fixed; */
     width: 100%;
-    bottom: 0;
+    height: 20vh;
   }
   
   .footer-content p {
@@ -813,6 +814,7 @@ footer {
         }
 
         .frame1 {
+            top: 99%;
             height: 20vw;
             width: 20vw;
         }
@@ -839,7 +841,7 @@ footer {
 
         .secprofile {
             justify-content: center;
-            width: 150%;
+            width: 100%;
         }
 
         .secprofiletext {
@@ -852,28 +854,43 @@ footer {
             font-size: 2.35vh;
         }
         .tab{
-            width: 30%;
+            width: 85%;
+            height: 15%;
         }
         .container1 h2{
             padding: 10% 0%;
         }
+        .container2 h2{
+            padding: 0% 1%;
+        }
         .Logo_images img{
             height: 23%;
         }
+    
+        .container1{
+            width: 100%;
+            height: 50vh;
+        }
+        .container2{
+            width: 100%;
+            height: 50vh;
+            justify-content: flex-end;
+        }
         header h2{
-            padding: 12vw;
+            padding: 4vw;
         }
-        .box h4,
+        /* .box h4,
         .box h3 {
-          margin-bottom: 10px; /* Add margin bottom to create space between elements */
-        }
+          margin-bottom: 10px; 
+        } */
         
 
         .tab button {
             width: 110%;
             /* Make tabs full-width */
             text-align: center;
-            padding: 20px 10px;
+            padding: 0px 0px;
+            font-size: 12px;
         }
 
 
