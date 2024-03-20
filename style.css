@@ -572,7 +572,12 @@ nav {
 }
 
 /* ++++++++++++++++++++++++++++++++ */
-
+/* .container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 .container1 h2 {
     text-align: center;
     padding: 2% 0%;
@@ -751,7 +756,10 @@ footer {
         }
 
         .hamburger_menu {
+            top: 5px;
             display: flex;
+            height: 50px;
+            width: 50px;
         }
 
         .vertical_menu {
@@ -856,6 +864,7 @@ footer {
         .secprofile {
             justify-content: center;
             width: 100%;
+            padding-right: 0px;
         }
 
         .secprofiletext {
@@ -869,12 +878,13 @@ footer {
         }
 
         .tab {
-            width: 85%;
-            height: 15%;
+            width: 85vw;
+            height: 15vw;
+            margin: 0 0;
         }
 
         .container1 h2 {
-            padding: 10% 0%;
+            padding: 12% 0%;
         }
 
         .container2 h2 {
@@ -886,6 +896,10 @@ footer {
         }
 
         .container1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             height: 50vh;
         }
@@ -907,11 +921,14 @@ footer {
 
 
         .tab button {
-            width: 110%;
+            width: 100%;
             /* Make tabs full-width */
             text-align: center;
-            padding: 0px 0px;
-            font-size: 12px;
+            padding: 12px 6px;
+            font-size: 15px;
+        }
+        .pag4{
+            height: 80%;
         }
 
 

@@ -200,15 +200,20 @@ function openTab(evt, tabName) {
 
 
 var tl = gsap.timeline();
-tl.to("#loader", {
-  top: "-150%",
-  borderTopLeftRadius: "70%",
-  borderBottomLeftRadius: "70%",
-  borderBottomRightRadius: "70%", // Add this line to animate the right side as well
-  delay: 0.3,
-  duration: 3,
-  ease: "power3.out", // Adjust easing for animation curve
-});
+function loading(){
+  tl.to("#loader", {
+    top: "-150%",
+    borderTopLeftRadius: "70%",
+    borderBottomLeftRadius: "70%",
+    borderBottomRightRadius: "70%", // Add this line to animate the right side as well
+    delay: 0.3,
+    duration: 3,
+    ease: "power3.out", // Adjust easing for animation curve
+  });
+
+}
+loading();
+
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Vertical Menu
@@ -223,21 +228,22 @@ hamburgerMenu.addEventListener("click", function () {
 });
 
 locoScroll.on("scroll", function (args) {
-  // Your scroll-related code here
   var scrollval = args.scroll.y;
-  // console.log("Scroll value:", scrollval);
 
-  if (!vertical_menu.classList.contains("openmenu")) {
-    if (scrollval > 55) {
-      gsap.to(hamburgerMenu, { duration: 0.03, scale: 1, display: "flex" });
+  if (window.innerWidth > 676) {
+    if (!vertical_menu.classList.contains("openmenu")) {
+      if (scrollval > 55) {
+        gsap.to(hamburgerMenu, { duration: 0.03, scale: 1, display: "flex" });
+      } else {
+        gsap.to(hamburgerMenu, { duration: 0.03, scale: 0, display: "none" });
+      }
     } else {
-      gsap.to(hamburgerMenu, { duration: 0.03, scale: 0, display: "none" });
+      gsap.to(hamburgerMenu, { duration: 0.03, scale: 1, display: "flex" });
     }
-  } else {
-    gsap.to(hamburgerMenu, { duration: 0.03, scale: 1, display: "flex" }); // Ensure hammenu is always displayed if vertical_menu is open
   }
-
+  
   // Update ScrollTrigger
   ScrollTrigger.update();
 });
+
 
